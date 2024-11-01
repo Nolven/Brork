@@ -116,7 +116,7 @@ void startEvilPortal(String tssid, uint8_t channel, bool deauth) {
           if(ep->hasArg("ssid")) AP_name = ep->arg("ssid").c_str();
           ep->send(200, "text/html", ssid_POST());
           ep->stop();                            // pára o servidor
-          wifiDisconnect();                     // desliga o WiFi
+          disconnectWifi();                     // desliga o WiFi
           WiFi.softAP(AP_name);                 // reinicia WiFi com novo SSID
           ep->begin();                          // reinicia o servidor
           previousTotalCapturedCredentials=-1;  // redesenha a tela
@@ -194,7 +194,7 @@ void startEvilPortal(String tssid, uint8_t channel, bool deauth) {
         dnsServer.stop();
 
         delay(100);
-        wifiDisconnect();
+        disconnectWifi();
     }
 }
 

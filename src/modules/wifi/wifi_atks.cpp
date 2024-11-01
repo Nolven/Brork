@@ -213,7 +213,7 @@ ScanNets:
       break;
   }
 
-  wifiDisconnect();
+  disconnectWifi();
   returnToMenu = true;
 }
 
@@ -322,7 +322,7 @@ void target_atk(String tssid, String mac, uint8_t channel)
     if (checkEscPress())
       break;
   }
-  wifiDisconnect();
+  disconnectWifi();
   returnToMenu = true;
 }
 
@@ -593,5 +593,5 @@ void beaconAttack()
     if (checkEscPress())
       break;
   }
-  wifiDisconnect();
+  disconnectWifi();
 }

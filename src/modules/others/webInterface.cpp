@@ -527,6 +527,6 @@ void startWebUi(bool mode_ap) {
   MDNS.end();
 
   delay(100);
-  wifiDisconnect();
+  disconnectWifi();
 
 }

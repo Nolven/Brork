@@ -61,7 +61,7 @@ bool Wardriving::begin_gps() {
 }
 
 void Wardriving::end() {
-    wifiDisconnect();
+    disconnectWifi();
 
     GPSserial.end();
 

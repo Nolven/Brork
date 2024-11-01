@@ -481,7 +481,7 @@ void sniffer_setup() {
   esp_wifi_stop();
   esp_wifi_set_promiscuous_rx_cb(NULL);
   esp_wifi_deinit();
-  wifiDisconnect();
+  disconnectWifi();
   delay(1);
 }
 

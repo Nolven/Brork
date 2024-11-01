@@ -23,7 +23,7 @@ void WifiMenu::optionsMenu() {
         };
     } else {
         options = {
-        {"Disconnect",   [=]()  { wifiDisconnect(); }},    //wifi_common.h
+        {"Disconnect",   [=]()  { disconnectWifi(); }},    //wifi_common.h
         {"AP info",   [=]()  { displayAPInfo(); }},
         };
     }

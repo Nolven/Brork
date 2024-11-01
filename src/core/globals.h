@@ -101,8 +101,6 @@ extern std::vector<Option> options;
 
 extern  String ssid;
 
-extern  String pwd;
-
 extern  String ap_ssid;
 
 extern  String ap_pwd;

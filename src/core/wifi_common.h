@@ -3,9 +3,9 @@
 #include <NTPClient.h>
 #include <Timezone.h>
 
-bool wifiConnect(String ssid, int encryptation, bool isAP = false);
+bool setupAP();
 
-void wifiDisconnect();
+void disconnectWifi();
 
 bool wifiConnectMenu( bool isAP = false);
 
